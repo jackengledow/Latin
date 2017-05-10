@@ -8,12 +8,8 @@ table {
 td{
 	width: 300px;
 }
-td:hover a{
-	color: black;
-}
 .title {
 	font-size: 40px;
-	font-weight: strong;
 	text-align: center;
 }
 .value {
@@ -21,16 +17,21 @@ td:hover a{
 	text-align: center;
 	padding-top: 50px;
 }
+.value1 {
+	font-size: 30px;
+	text-align: center;
+	padding-top: 20px;
+}
 body {
 	background-color: #DD0A0A;
 	color: yellow;
 	font-family: 'EB Garamond', serif;
-	display: flex;
-	justify-content: center;
 }
-div{
-	display: flex;
-	justify-content: center;
+.tab {
+   display: none;
+}
+.tab.active {
+   display: inline-block;
 }
 img {
 	height: 300px;
@@ -38,6 +39,10 @@ img {
 a {
 	color: yellow;
 	text-decoration: none;
+}
+a:hover {
+   text-decoration: none;
+   color: black;
 }
 .a{
 	text-decoration: none;
