@@ -30,7 +30,7 @@ body {
 .tab {
    display: none;
 }
-.tab.active {
+.active {
    display: inline-block;
 }
 img {
