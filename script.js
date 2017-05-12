@@ -1,44 +1,15 @@
-var checkC = function(){
-	var answer = document.getElementById("c").checked;
-	if(answer === true){
-		$('img').remove();
-		$("div").append("<p>Correct!</p>")
-	}
-	else if (answer === false) {
-		$('img').remove();
-		$("div").append("<p>Definitely wrong.</p>")
-	}
-}
-var checkD = function(){
-	var answer = document.getElementById("d").checked;
-	if(answer === true){
-		$('img').remove();
-		$("div").append("<p>Correct!</p>")
-	}
-	else if (answer === false) {
-		$('img').remove();
-		$("div").append("<p>Definitely wrong.</p>")
-	}
-}
-var checkB = function(){
-	var answer = document.getElementById("b").checked;
-	if(answer === true){
-		$('img').remove();
-		$("div").append("<p>Correct!</p>")
-	}
-	else if (answer === false) {
-		$('img').remove();
-		$("div").append("<p>Definitely wrong.</p>")
-	}
-}
-var checkA = function(){
-	var answer = document.getElementById("a").checked;
-	if(answer === true){
-		$('img').remove();
-		$("div").append("<p>Correct!</p>")
-	}
-	else if (answer === false) {
-		$('img').remove();
-		$("div").append("<p>Definitely wrong.</p>")
-	}
-}
+var checkAnswer = function(correctAnswer){
+  var answer = document.getElementById(correctAnswer).checked;
+  if (answer === true){
+    $(".response").html("Correct!");
+    if(window.location.hash.indexOf("#tab1") > -1 || window.location.hash.indexOf("#tab2") > -1 || window.location.hash.indexOf("#tab3") > -1 || window.location.hash.indexOf("#tab4") > -1){
+      console.log("200");
+    }
+    else{
+      console.log("not 200");
+    }
+  }
+  else{
+    $(".response").html("Wrong.");
+  }
+};
