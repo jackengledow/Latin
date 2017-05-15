@@ -24,7 +24,7 @@ var checkB = function(){
 	var answer = document.getElementById("b").checked;
 	if(answer === true){
 		$('img').remove();
-		$("div").append("<p>Correct!</p>")
+		$(".response").append("<p>Correct!</p>")
 	}
 	else if (answer === false) {
 		$('img').remove();
