@@ -1,8 +1,11 @@
 var checkAnswer = function(correctAnswer){
-  var answer = document.getElementById(correctAnswer).checked;
+   var id = correctAnswer + window.location.hash.substring(4, 6);
+   console.log(id);
+  var answer = document.getElementById(id).checked;
+  console.log(answer);
   if (answer === true){
     $(".response").html("Correct!");
-    if(window.location.hash.indexOf("#tab1") > -1 || window.location.hash.indexOf("#tab2") > -1 || window.location.hash.indexOf("#tab3") > -1 || window.location.hash.indexOf("#tab4") > -1){
+    if(document.URL.indexOf("#tab01") > -1 || window.location.hash.indexOf("#tab02") > -1 || window.location.hash.indexOf("#tab03") > -1 || window.location.hash.indexOf("#tab04") > -1){
       console.log("200");
     }
     else{
