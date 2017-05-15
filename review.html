@@ -62,7 +62,7 @@
        <br>
        <input type = "radio" id = "d" name = "this">ambulabamus
       </form>
-      <button onclick = "checkB()">Submit</button>
+      <button onclick = "checkAnswer('b')">Submit</button>
       <br>
       <a href = "#tab0" class = "a"><button>Return to Home Page</button></a>
     </div>
@@ -81,7 +81,7 @@
        <br>
        <input type = "radio" id = "d" name = "this">A lasting friendship between Catholics and Protestants in France
       </form>
-      <button onclick = "checkB()">Submit</button>
+      <button onclick = "checkAnswer(a)">Submit</button>
       <br>
       <a href = "#tab0" class = "a"><button>Return to Home Page</button></a>
     </div>
@@ -100,7 +100,7 @@
        <br>
        <input type = "radio" id = "d" name = "this">A lasting friendship between Catholics and Protestants in France
       </form>
-      <button onclick = "checkB()">Submit</button>
+      <button onclick = "checkAnswer(c)">Submit</button>
       <br>
       <a href = "#tab0" class = "a"><button>Return to Home Page</button></a>
     </div>
@@ -119,7 +119,7 @@
        <br>
        <input type = "radio" id = "d" name = "this">A lasting friendship between Catholics and Protestants in France
       </form>
-      <button onclick = "checkB()">Submit</button>
+      <button onclick = "checkAnswer(d)">Submit</button>
       <br>
       <a href = "#tab0" class = "a"><button>Return to Home Page</button></a>
     </div>
@@ -429,13 +429,10 @@
     </div>
     <script>
       $("a").on('click', function(e)  {
-      var currentAttrValue = $(this).attr('href');
-      console.log(currentAttrValue);
-      // Show/Hide Content
-      $('.tab' + currentAttrValue).addClass('active').siblings().removeClass('active');
-      // Change/remove current tab to active
-      $(this).parent('li').addClass('active').siblings().removeClass('active');
-      e.preventDefault();
+        var currentAttrValue = $(this).attr('href');
+        $('.tab' + currentAttrValue).addClass('active').siblings().removeClass('active');
+        $(this).parent('li').addClass('active').siblings().removeClass('active');
+        e.preventDefault();
       });
     </script>
 	</body>
