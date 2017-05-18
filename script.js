@@ -15,18 +15,18 @@ var checkAnswer = function(correctAnswer){
       console.log("400");
       $("#score").html(totalScore);
     }
-   if(document.URL.indexOf("#tab11") > -1 || window.location.hash.indexOf("#tab10") > -1 || window.location.hash.indexOf("#tab11") > -1 || window.location.hash.indexOf("#tab12") > -1){
+   if(document.URL.indexOf("#tab09") > -1 || window.location.hash.indexOf("#tab10") > -1 || window.location.hash.indexOf("#tab11") > -1 || window.location.hash.indexOf("#tab12") > -1){
       totalScore = totalScore + 600;
       console.log("600");
       $("#score").html(totalScore);
     }
-   if(document.URL.indexOf("#tab13") > -1 || window.location.hash.indexOf("#tab14") > -1 || window.location.hash.indexOf("#tab015") > -1 || window.location.hash.indexOf("#tab016") > -1){
+   if(document.URL.indexOf("#tab13") > -1 || window.location.hash.indexOf("#tab14") > -1 || window.location.hash.indexOf("#tab15") > -1 || window.location.hash.indexOf("#tab16") > -1){
       totalScore = totalScore + 800;
       console.log("800");
       $("#score").html(totalScore);
     }
    if(document.URL.indexOf("#tab17") > -1 || window.location.hash.indexOf("#tab18") > -1 || window.location.hash.indexOf("#tab19") > -1 || window.location.hash.indexOf("#tab20") > -1){
-      totalScore = totalScore + 1000
+      totalScore = totalScore + 1000;
       console.log("1000");
       $("#score").html(totalScore);
     }
@@ -48,13 +48,13 @@ var checkAnswer = function(correctAnswer){
       console.log("600");
       $("#score").html(totalScore);
     }
-   if(document.URL.indexOf("#tab13") > -1 || window.location.hash.indexOf("#tab14") > -1 || window.location.hash.indexOf("#tab015") > -1 || window.location.hash.indexOf("#tab016") > -1){
+   if(document.URL.indexOf("#tab13") > -1 || window.location.hash.indexOf("#tab14") > -1 || window.location.hash.indexOf("#tab15") > -1 || window.location.hash.indexOf("#tab16") > -1){
       totalScore = totalScore - 800;
       console.log("800");
       $("#score").html(totalScore);
     }
    if(document.URL.indexOf("#tab17") > -1 || window.location.hash.indexOf("#tab18") > -1 || window.location.hash.indexOf("#tab19") > -1 || window.location.hash.indexOf("#tab20") > -1){
-      totalScore = totalScore - 1000
+      totalScore = totalScore - 1000;
       console.log("1000");
       $("#score").html(totalScore);
     }
