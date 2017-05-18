@@ -65,3 +65,27 @@ form {
 h1 {
 	text-align: center;
 }
+.font-size {
+	font-size: 50px;
+}
+#score {
+	font-size: 55px;
+	margin-left: 175px;
+	position: relative;
+	top: -250px;
+}
+button {
+	background: none;
+	height: 50px;
+	font-size: 30px; 
+	color: yellow;
+	border: 2px solid yellow;
+	border-radius: 2px;
+	margin-top: 20px;
+}
+button:focus{
+	outline: none;
+}
+button:hover {
+	opacity: .4;
+}
